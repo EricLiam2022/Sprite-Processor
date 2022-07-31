@@ -1,8 +1,8 @@
 import json
 import PIL.Image as image
 
-img = image.open('./test.png')
-with open('./test.json', "r") as f:
+img = image.open('test.png')
+with open('test.json', "r") as f:
     dirs = json.load(f)["frames"]
     for i in dirs:
         name = i['filename']
